@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///Users/G.Orozco/Downloads/aigabbie-website-final.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGabbie | AI Receptionist for Car Dealerships</title>
+    <meta name="description" content="Stop losing ROs to voicemail. AIGabbie is a done-for-you AI receptionist for car dealerships. 24/7 bilingual answering, appointment booking, white-glove service.">
+    <meta name="keywords" content="AI receptionist, dealership phone answering, auto dealer answering service, 24/7 receptionist, AIGabbie, car dealership AI, BDC alternative">
+    <link rel="canonical" href="https://aigabbie.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #132240;
+            --gold: #c9a227;
+            --gold-light: #e3b830;
+            --cream: #f8f6f1;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--navy);
+            color: var(--cream);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        .script {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .logo span.ai {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .logo span.gabbie {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.6rem;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+
+        .hero-tagline {
+            color: var(--gold);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .divider-line {
+            display: inline-block;
+            width: 100px;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.4;
+        }
+
+        .divider-diamond {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            transform: rotate(45deg);
+            margin: 0 15px;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--navy-light);
+            text-align: center;
+        }
+
+        .problem h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .problem .subtitle {
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 50px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .stat-box {
+            padding: 30px;
+            border: 1px solid rgba(201, 162, 39, 0.3);
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        .problem-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--cream);
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Demo Section */
+        .demo {
+            text-align: center;
+        }
+
+        .demo h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .demo .subtitle {
+            font-size: 1.1rem;
+            color: var(--cream);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .demo-box {
+            background: var(--navy-light);
+            border: 2px solid var(--gold);
+            padding: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .demo-box .phone-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .demo-box .phone-number a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .demo-box .demo-name {
+            font-size: 1.1rem;
+            color: var(--cream);
+            margin-bottom: 20px;
+        }
+
+        .demo-box p {
+            font-size: 0.95rem;
+            color: var(--cream);
+            opacity: 0.8;
+        }
+
+        /* Offer Section */
+        .offer {
+            background: var(--navy-light);
+            text-align: center;
+        }
+
+        .offer h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .offer .price-tagline {
+            color: var(--gold);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        .offer-card {
+            background: var(--navy);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            padding: 60px 50px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .price-display {
+            margin-bottom: 50px;
+        }
+
+        .price-main {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-period {
+            font-size: 1.2rem;
+            color: var(--cream);
+            opacity: 0.8;
+        }
+
+        .price-setup {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: var(--cream);
+            opacity: 0.7;
+        }
+
+        .features-section {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .features-section h3 {
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .feature-check {
+            color: var(--gold);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .offer-divider {
+            height: 1px;
+            background: rgba(201, 162, 39, 0.3);
+            margin: 40px 0;
+        }
+
+        /* White Glove Section */
+        .white-glove {
+            text-align: center;
+        }
+
+        .white-glove h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .white-glove .intro {
+            font-size: 1.15rem;
+            color: var(--cream);
+            max-width: 750px;
+            margin: 0 auto 50px;
+            opacity: 0.95;
+        }
+
+        .white-glove .intro strong {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        .glove-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .glove-item {
+            padding: 30px;
+            border: 1px solid rgba(201, 162, 39, 0.2);
+            background: var(--navy-light);
+        }
+
+        .glove-item h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .glove-item p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        /* No Risk Section */
+        .no-risk {
+            background: var(--navy-light);
+            text-align: center;
+        }
+
+        .no-risk h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .risk-item h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .risk-item p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .about .signature {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-top: 30px;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: var(--navy-light);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .final-cta h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            color: var(--cream);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .contact-text {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: var(--cream);
+            opacity: 0.8;
+        }
+
+        .final-cta .contact-text a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(201, 162, 39, 0.2);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .stats-grid,
+            .glove-grid,
+            .risk-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-card {
+                padding: 40px 25px;
+            }
+
+            .price-main {
+                font-size: 3rem;
+            }
+
+            .demo-box {
+                padding: 40px 25px;
+            }
+
+            .demo-box .phone-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="file:///" class="logo">
+                <span class="ai">AI</span><span class="gabbie">Gabbie</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <p class="hero-tagline">AI Receptionist for Car Dealerships</p>
+            <h1>Stop Losing ROs to Voicemail</h1>
+            <p>Every missed call is a missed Repair Order. At $450 average, that's money walking out your door — to your competitor. AIGabbie answers every call, 24/7, in English and Spanish. No hold times. No voicemail. No lost revenue.</p>
+            <a href="https://tinyurl.com/aigabbie-apply" class="cta-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>The Numbers Don't Lie</h2>
+            <p class="subtitle">What missed calls are really costing your dealership</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">23%</div>
+                    <div class="stat-label">of inbound calls to dealerships go unanswered</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">158</div>
+                    <div class="stat-label">service appointments missed per month (average dealership)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">$1.17M</div>
+                    <div class="stat-label">in potential lost revenue per year from missed service calls</div>
+                </div>
+            </div>
+
+            <p class="problem-quote">"Your BDC is slammed. Your receptionist is helping someone in the showroom. The phone rings six times and goes to voicemail. That customer? They just called your competitor."</p>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo">
+        <div class="container">
+            <h2>Hear It For Yourself</h2>
+            <p class="subtitle">Don't take my word for it. Call our demo line and talk to the AI. Ask questions. Book a test appointment. See how she handles it.</p>
+
+            <div class="demo-box">
+                <div class="phone-number"><a href="tel:909-344-5421">(909) 344-5421</a></div>
+                <div class="demo-name">Sunset Motors Demo Line</div>
+                <p>No forms. No sales pitch. Just proof it works.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer">
+        <div class="container">
+            <h2>One Simple Offer</h2>
+            <p class="price-tagline">Everything you need. Nothing you don't.</p>
+
+            <div class="offer-card">
+                <div class="price-display">
+                    <div class="price-main">$1,997</div>
+                    <div class="price-period">per month</div>
+                    <div class="price-setup">$997 one-time setup</div>
+                </div>
+
+                <div class="features-section">
+                    <h3>What's Included</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>24/7 AI Receptionist — nights, weekends, holidays</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Bilingual (English + Spanish)</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Custom voice &amp; greeting — sounds like YOUR dealership</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Full knowledge base — trained on your services, hours, FAQs</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Appointment booking — directly into your calendar</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Appointment reminders — AI texts customers automatically</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Live call transfers — to your team when needed</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Inbound &amp; outbound calls</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>SMS text handling — responds automatically</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Up to 60 hours talk time per month</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>2,000 SMS messages included</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">✓</span>
+                            <span>Call recordings &amp; transcripts — available upon request</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-divider"></div>
+
+                <div class="features-section">
+                    <h3>Add-Ons</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="feature-check">+</span>
+                            <span>Extra talk time — $200 per 10-hour block</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">+</span>
+                            <span>Priority text support — available with upgrade</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-check">+</span>
+                            <span>Outbound campaigns — custom quote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- White Glove Section -->
+    <section class="white-glove">
+        <div class="container">
+            <h2>White-Glove Service</h2>
+            <p class="intro"><strong>I'm Gabbie</strong> — and I personally manage your AI receptionist. You're not buying software you'll have to figure out. You're hiring a dedicated partner who builds it, monitors it, and makes it better every month. Here's what that looks like:</p>
+
+            <div class="glove-grid">
+                <div class="glove-item">
+                    <h4>Onboarding Call</h4>
+                    <p>We kick off live — I learn your business, your voice, your needs personally.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Custom AI Build</h4>
+                    <p>Your AI is built and trained specifically for your dealership — not a template.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Dedicated First-Week Support</h4>
+                    <p>I actively monitor and refine your account during the first week to ensure a smooth launch.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Weekly Monitoring</h4>
+                    <p>I listen to calls and catch problems before you do.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Monthly Optimization</h4>
+                    <p>I train your AI to get smarter every month based on real calls.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Monthly Check-In Call</h4>
+                    <p>15 minutes — we review what's working, what's not, and what's next.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Monthly Performance Report</h4>
+                    <p>Delivered via email so you see exactly what's happening.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>Direct Email Access</h4>
+                    <p>Reach me directly — no support tickets, no waiting.</p>
+                </div>
+                <div class="glove-item">
+                    <h4>48-Hour Response Time</h4>
+                    <p>Issues handled fast, by a human who knows your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- No Risk Section -->
+    <section class="no-risk">
+        <div class="container">
+            <h2>No Risk</h2>
+
+            <div class="risk-grid">
+                <div class="risk-item">
+                    <h4>No Long-Term Contract</h4>
+                    <p>Month-to-month. Cancel anytime. No questions asked.</p>
+                </div>
+                <div class="risk-item">
+                    <h4>Live Demo</h4>
+                    <p>Call <a href="tel:909-344-5421" style="color: var(--gold);">(909) 344-5421</a> and experience it yourself before you decide.</p>
+                </div>
+                <div class="risk-item">
+                    <h4>Real Human Support</h4>
+                    <p>Not a chatbot. Not a help desk. Me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Why I Built This</h2>
+                <p>I sat on hold at a dealership for 28 minutes. Twenty-eight minutes. I eventually hung up and called their competitor.</p>
+                <p>Your customers are doing the same thing right now.</p>
+                <p>AIGabbie isn't software you'll figure out someday. It's a done-for-you service with a real human behind it. I set it up. I monitor it. I make it better. You just answer the appointments that roll in.</p>
+                <p class="signature">— Gabbie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Stop Losing Customers to Voicemail?</h2>
+            <p>Every week you wait is another $5K–$20K in missed ROs. Let's fix that.</p>
+            <a href="https://tinyurl.com/aigabbie-apply" class="cta-button">Apply Now</a>
+            <p class="contact-text">Questions? Call <a href="tel:310-359-1729">(310) 359-1729</a> or email <a href="mailto:support@aigabbie.com">support@aigabbie.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AIGabbie. All rights reserved.</p>
+            <p><a href="mailto:support@aigabbie.com">support@aigabbie.com</a> · <a href="tel:310-359-1729">(310) 359-1729</a></p>
+        </div>
+    </footer>
+
+
+
+</body></html>
