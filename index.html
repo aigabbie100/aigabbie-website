@@ -62,6 +62,17 @@
             border-bottom: 1px solid rgba(201, 162, 39, 0.2);
         }
 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+        }
+
         .logo {
             font-size: 2.2rem;
             color: var(--gold);
@@ -77,6 +88,21 @@
         .logo span.gabbie {
             font-family: 'Great Vibes', cursive;
             font-size: 2.6rem;
+        }
+
+        .header-nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            border-bottom-color: var(--gold);
         }
 
         /* Hero */
@@ -442,6 +468,16 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .header-nav {
+                align-self: flex-start;
+            }
+
             .hero h1 {
                 font-size: 2.2rem;
             }
@@ -467,9 +503,18 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <a href="/" class="logo">
-                <span class="ai">Ai</span><span class="gabbie">Gabbie</span>
-            </a><p style="font-size: 0.75rem; color: var(--gold); margin-top: 5px; font-style: italic;">Your AI-Powered Office Assistant — Available 24/7</p>        </div>
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="/" class="logo">
+                        <span class="ai">Ai</span><span class="gabbie">Gabbie</span>
+                    </a>
+                    <p style="font-size: 0.75rem; color: var(--gold); margin-top: 5px; font-style: italic;">Your AI-Powered Office Assistant — Available 24/7</p>
+                </div>
+                <nav class="header-nav">
+                    <a href="blog.html">INSIGHTS</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- Hero -->
@@ -482,7 +527,7 @@
         </div>
     </section>
 
-    <div style="text-align: center; padding: 20px 0;"><a href="blog.html" style="color: #c9a227; text-decoration: underline; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase;">INSIGHTS</a></div>    <!-- Divider -->
+    <!-- Divider -->
     <div class="divider">
         
         <span class="divider-diamond"></span>
@@ -638,4 +683,3 @@
     </footer>
 
 </body></html>
-
