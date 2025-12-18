@@ -90,7 +90,13 @@
             font-size: 2.6rem;
         }
 
-        .header-nav a {
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .header-nav > a {
             color: var(--gold);
             text-decoration: none;
             font-size: 0.9rem;
@@ -101,8 +107,69 @@
             transition: border-color 0.3s ease;
         }
 
-        .header-nav a:hover {
+        .header-nav > a:hover {
             border-bottom-color: var(--gold);
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .dropdown-toggle:hover {
+            border-bottom-color: var(--gold);
+        }
+
+        .dropdown-toggle::after {
+            content: '▾';
+            font-size: 0.7rem;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--navy-light);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            min-width: 220px;
+            padding: 10px 0;
+            margin-top: 10px;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+
+        .dropdown-menu a:hover {
+            background: rgba(201, 162, 39, 0.1);
         }
 
         /* Hero */
@@ -475,7 +542,16 @@
             }
 
             .header-nav {
-                align-self: flex-start;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+                border: none;
+                padding-left: 15px;
+                margin-top: 5px;
             }
 
             .hero h1 {
@@ -511,6 +587,12 @@
                     <p style="font-size: 0.75rem; color: var(--gold); margin-top: 5px; font-style: italic;">Your AI-Powered Office Assistant — Available 24/7</p>
                 </div>
                 <nav class="header-nav">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">ADD-ON SERVICES</span>
+                        <div class="dropdown-menu">
+                            <a href="revival.html">Lost Customer Revival</a>
+                        </div>
+                    </div>
                     <a href="blog.html">INSIGHTS</a>
                 </nav>
             </div>
