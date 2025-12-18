@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Customer Revival | AiGabbie</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="Wake up your dormant customers. AiGabbie's Lost Customer Revival service uses AI to reactivate customers who haven't visited in 12-18 months. Turn forgotten contacts into booked appointments.">
+    <meta name="keywords" content="customer reactivation, lost customer recovery, dealership outbound calls, AI outreach, dormant customer revival, service department marketing">
+    <link rel="canonical" href="https://aigabbie.com/revival.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1628;
+            --navy-light: #132240;
+            --gold: #c9a227;
+            --gold-light: #e3b830;
+            --cream: #f8f6f1;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--navy);
+            color: var(--cream);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        .script {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(201, 162, 39, 0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .logo span.ai {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .logo span.gabbie {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.6rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            border-bottom-color: var(--gold);
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .dropdown-toggle::after {
+            content: '▾';
+            font-size: 0.7rem;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--navy-light);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            min-width: 220px;
+            padding: 10px 0;
+            margin-top: 10px;
+            z-index: 100;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .dropdown-menu a:hover {
+            background: rgba(201, 162, 39, 0.1);
+            border-bottom: none;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+
+        .hero-tagline {
+            color: var(--gold);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .divider-line {
+            display: inline-block;
+            width: 100px;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.4;
+        }
+
+        .divider-diamond {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            transform: rotate(45deg);
+            margin: 0 15px;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--navy-light);
+            text-align: center;
+        }
+
+        .problem h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .problem .subtitle {
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 50px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .stat-box {
+            padding: 30px;
+            border: 1px solid rgba(201, 162, 39, 0.3);
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        .problem-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--cream);
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .step-item {
+            padding: 30px 20px;
+            border: 1px solid rgba(201, 162, 39, 0.2);
+            background: var(--navy-light);
+        }
+
+        .step-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .step-item h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .step-item p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        /* Results Section */
+        .results {
+            background: var(--navy-light);
+            text-align: center;
+        }
+
+        .results h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .results .subtitle {
+            font-size: 1.15rem;
+            color: var(--cream);
+            opacity: 0.9;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .result-item {
+            padding: 30px;
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            text-align: left;
+        }
+
+        .result-item h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .result-item p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .pricing .subtitle {
+            font-size: 1.15rem;
+            color: var(--cream);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: var(--navy-light);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .final-cta h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            color: var(--cream);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .contact-text {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: var(--cream);
+            opacity: 0.8;
+        }
+
+        .final-cta .contact-text a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(201, 162, 39, 0.2);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .header-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .dropdown-menu {
+                position: static;
+                border: none;
+                padding-left: 15px;
+                margin-top: 5px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .stats-grid,
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo">
+                        <span class="ai">Ai</span><span class="gabbie">Gabbie</span>
+                    </a>
+                    <p style="font-size: 0.75rem; color: var(--gold); margin-top: 5px; font-style: italic;">Your AI-Powered Office Assistant — Available 24/7</p>
+                </div>
+                <nav class="header-nav">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">ADD-ON SERVICES</span>
+                        <div class="dropdown-menu">
+                            <a href="revival.html">Lost Customer Revival</a>
+                        </div>
+                    </div>
+                    <a href="blog.html">INSIGHTS</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <p class="hero-tagline">Add-On Service</p>
+            <h1>Wake Up Your Lost Customers</h1>
+            <p>You're spending thousands on ads to find new customers. Meanwhile, you're sitting on a goldmine: customers who already trusted you once but haven't been back in over a year. Let's bring them home.</p>
+            <a href="https://tinyurl.com/aigabbie-apply" class="cta-button">Book a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>The Hidden Revenue in Your Database</h2>
+            <p class="subtitle">Customers you've already won are slipping away</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">68%</div>
+                    <div class="stat-label">of customers leave because they feel forgotten, not because of price or service</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">5x</div>
+                    <div class="stat-label">cheaper to reactivate an old customer than acquire a new one</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">$50K+</div>
+                    <div class="stat-label">potential annual service revenue from reactivating just 10-20 customers per month</div>
+                </div>
+            </div>
+
+            <p class="problem-quote">"Your CRM is full of customers who haven't been back in 12-18 months. Nobody's calling them. Nobody's asking why. They're just... gone. Until now."</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h4>Send Your List</h4>
+                    <p>Export customers inactive 12-18+ months from your DMS. Most systems make this easy.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h4>AI Makes the Calls</h4>
+                    <p>Warm, friendly outreach. Not salesy. Just checking in to see if their vehicle is running well.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h4>Appointments Get Booked</h4>
+                    <p>Customers who need service get scheduled on the spot. Others tell us why they left.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h4>You Get a Full Report</h4>
+                    <p>Customers reached, appointments booked, reasons for leaving, and revenue generated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results">
+        <div class="container">
+            <h2>What You'll Get Back</h2>
+            <p class="subtitle">Every campaign delivers actionable intelligence and real appointments</p>
+
+            <div class="results-grid">
+                <div class="result-item">
+                    <h4>Booked Appointments</h4>
+                    <p>Customers who say "actually yeah, I need an oil change" get scheduled immediately.</p>
+                </div>
+                <div class="result-item">
+                    <h4>Clean Database</h4>
+                    <p>Know who moved, who bought elsewhere, and who's still a prospect. Stop marketing to dead leads.</p>
+                </div>
+                <div class="result-item">
+                    <h4>Customer Intelligence</h4>
+                    <p>Find out WHY customers left. Bad experience? Moved? Just forgot? Now you know.</p>
+                </div>
+                <div class="result-item">
+                    <h4>Trackable ROI</h4>
+                    <p>Clear reporting on revenue generated from reactivated customers. Real numbers, not guesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Flexible Campaign Options</h2>
+            <p class="subtitle">Run it as a one-time campaign to test the waters, or set up quarterly revivals to keep your database active and your service bays full.</p>
+            <a href="https://tinyurl.com/aigabbie-apply" class="cta-button">Get a Custom Quote</a>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Wake Up Your Lost Customers?</h2>
+            <p>Every month you wait, more customers drift further away. Let's bring them back before your competitor does.</p>
+            <a href="https://tinyurl.com/aigabbie-apply" class="cta-button">Book a Free Consultation</a>
+            <p class="contact-text">Questions? Call <a href="tel:310-359-1729">(310) 359-1729</a> or email <a href="mailto:support@aigabbie.com">support@aigabbie.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 AiGabbie. All rights reserved.</p>
+            <p><a href="mailto:support@aigabbie.com">support@aigabbie.com</a> · <a href="tel:310-359-1729">(310) 359-1729</a></p>
+        </div>
+    </footer>
+
+</body></html>
